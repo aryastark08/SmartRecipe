@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Recipe label as a clickable link
         const labelLink = document.createElement('a');
-        labelLink.classList.add('recipe-label', 'text-xl','text-slate-700','hover:bg-sky-600','cursor-pointer','font-bold','block','text-center','mx-auto');
+        labelLink.classList.add('recipe-label', 'text-xl','hover:text-red-600','cursor-pointer','font-bold','block','text-center','mx-auto');
         labelLink.textContent = recipe.label;
         labelLink.href = recipe.url; // Link to the full recipe
         labelLink.target = '_blank'; // Open the link in a new tab
