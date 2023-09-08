@@ -1,7 +1,7 @@
 # Smart Recipe Website🍽️
 
 ### Purpose:
-SmartRecipe is your culinary companion, powered by AI 🤖, to revolutionize your cooking experience. 🍳👨‍🍳
+SmartRecipe is your culinary companion, to revolutionize your cooking experience. 🍳👨‍🍳
 
 Discover Delightful Dishes: 🌮🍕🥗
 SmartRecipe suggests personalized recipes tailored to your taste and the ingredients you have at home. Say goodbye to meal planning hassles and hello to delightful dining adventures.
