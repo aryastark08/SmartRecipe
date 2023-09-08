@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Recipe</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+
+    <!-- Include Google Fonts for headers and paragraphs -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Include the Tailwind CSS stylesheet from CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Custom styles for responsiveness */
+      @media (max-width: 768px) {
+        .nav-dropdown {
+          display: none;
+        }
+        .nav-mobile {
+          display: block;
+        }
+        .nav-toggle {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="bg-white font-sans overscroll-auto">
+    <header class="text-center">
+      <nav class="bg-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+          <h1
+            class="text-3xl font-bold flex flex-nowrap uppercase"
+            style="font-family: 'Lemonada', cursive"
+          >
+            <img
+              src="images/logo.png"
+              class="px-3"
+              
+              alt="Logo"
+            /><span style="color: rgb(155, 17, 17);">Smart Recipes</span>
+          </h1>
+          <ul class="hidden nav-dropdown md:flex space-x-4">
+            <li>
+              <a href="#" class="text-slate-500 hover:text-red-300 text-lg"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.simplyrecipes.com/"
+                class="text-slate-500 hover:text-red-300 text-lg"
+                >More Recipes</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.zomato.com/ahmedabad"
+                class="text-slate-500 hover:text-red-300 text-lg"
+                >Collaborations</a
+              >
+            </li>
+          </ul>
+          <!-- Mobile Nav Toggle Button -->
+          <div class="md:hidden nav-toggle">
+            <button id="mobileMenuButton" class="focus:outline-none">
+              <svg
+                class="w-6 h-6 text-gray-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- Mobile Nav Menu -->
+        <ul id="mobileMenu" class="hidden md:hidden nav-mobile text-center">
+          <li><a href="#" class="block py-2 hover:bg-gray-200">Home</a></li>
+          <li>
+            <a
+              href="https://www.simplyrecipes.com/"
+              class="block py-2 hover:bg-gray-200"
+              >More Recipes</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.zomato.com/ahmedabad"
+              class="block py-2 hover:bg-gray-200"
+              >Collaborations</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <hr
+      style="border-color: rgb(255, 179, 0); border-width: 0.1rem; width: 100vw"
+    />
+    <section class="hero-section w-full mb-6">
+      <div
+        class="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-center max-height-100 "
+      >
+      <div
+      class="w-full"
+      style="background-image: url('images/image1.jpeg'); background-repeat: no-repeat; background-size: cover;"
+    >
+      <div
+        class="container mx-auto p-8 text-white text-center lg:text-left"
+      >
+        <h1
+          class="text-4xl lg:text-6xl font-bold mb-4 leading-loose"
+          style="font-family: 'Poppins', sans-serif"
+        >
+          Unlock the Culinary Artistry Within You
+        </h1>
+        <p
+          class="text-lg lg:text-xl pt-8 line-clamp-3"
+          style="font-family: 'Roboto', sans-serif"
+        >
+          Explore a world of flavors and elevate your cooking skills with our
+          handpicked collection of gourmet recipes. Join us on a journey to
+          discover the chef in you.
+        </p>
+      </div>
+    </div>
+    
+    </section>
+
+    <section class="container mx-auto mt-8 px-4 mt-4">
+      <!-- Apply the Roboto font to paragraphs -->
+      <h2
+        class="font-roboto text-3xl font-semibold text-center sm:text-left md:text-left"
+      >
+        Get Cooking
+      </h2>
+      <br />
+      <label class="relative block">
+    
+        <input
+          class="placeholder:italic placeholder:text-slate-600 block bg-white w-96 border border-slate-600 rounded-md py-2 pl-9 pr-3 shadow-lg focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+          placeholder="Enter your ingredients..."
+          type="text"
+          id="ingredientInput"
+        /> </label
+      ><br />
+      <button
+        id="suggestRecipeBtn"
+        class="mt-2 bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600"
+      >
+        Suggest Recipes
+      </button>
+    </section>
+    <section id="recipeResults" class="container mx-auto mt-8 px-4">
+      <h2
+        class="font-roboto text-2xl font-semibold text-center"
+        style="font-family: 'Poppins', sans-serif"
+      >
+        Recipe Suggestions
+      </h2>
+      <br />
+      <br />
+      <div
+        id="recipeCards"
+        class="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 place-content-evenly"
+      >
+        <!-- Recipe cards will appear here -->
+      </div>
+    </section>
+
+    <footer class="bg-yellow-300 bg-cover bg-center py-14 text-white">
+        <div class="container mx-auto text-center">
+          <p class="text-4xl font-semibold mb-4">Stay Updated with Our Newsletter</p>
+          <p class="mb-8 text-green-700">Subscribe to our newsletter for the latest recipes and culinary tips.</p>
+          
+          <!-- Newsletter Form -->
+          <form class="flex justify-center">
+            <input
+              type="email"
+              class="w-1/2 p-2 rounded-l-lg focus:outline-none"
+              placeholder="Enter your email"
+            />
+            <button
+              type="submit"
+              class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-r-lg focus:outline-none"
+            >
+              Subscribe
+            </button>
+          </form>
+      
+          <div class="mt-8 text-gray-900">
+            &copy; 2023 Smart Recipes. All rights reserved.
+          </div>
+        </div>
+      </footer>
+      
+
+    <script src="script.js"></script>
+  </body>
+</html>

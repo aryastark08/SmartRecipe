@@ -1,0 +1,16 @@
+/* Custom CSS for recipe cards */
+/* .recipe-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); Add 3D shadow effect
+} */
+
+/* Style the title below the recipe images */
+.recipe-label {
+  transition: color 0.2s ease;
+}
+.recipe-label .a:hover {
+  color: rgb(0, 187, 255);
+}
