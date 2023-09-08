@@ -1,4 +1,4 @@
-# Smart Recipe 🍽️
+# Smart Recipe Website🍽️
 
 ### Purpose:
 SmartRecipe is your culinary companion, powered by AI 🤖, to revolutionize your cooking experience. 🍳👨‍🍳
