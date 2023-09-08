@@ -14,7 +14,7 @@ Access SmartRecipe on your favorite devices, from smartphones to tablets. We mak
 
 ### How To Use:
 
-SmartRecipe is a website that uses \href{https://www.edamam.com/} to suggest personalized recipes based on the ingredients you have at home.
+SmartRecipe is a website that uses \url{https://www.edamam.com/} to suggest personalized recipes based on the ingredients you have at home.
 Type in the ingredients you have at home, or any specific nutrient-rich diet you want to add to your menu, or simply browse through recipes of the world. Whatever you wish, we get you the dish. 🍽️🥗
 
 Happy Munching! 🌟✨
