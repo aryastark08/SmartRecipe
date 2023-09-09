@@ -1,7 +1,7 @@
 # Smart Recipe Website🍽️
 
 ### Purpose:
-SmartRecipe is your culinary companion, powered by AI 🤖, to revolutionize your cooking experience. 🍳👨‍🍳
+SmartRecipe is your culinary companion, to revolutionize your cooking experience. 🍳👨‍🍳
 
 Discover Delightful Dishes: 🌮🍕🥗
 SmartRecipe suggests personalized recipes tailored to your taste and the ingredients you have at home. Say goodbye to meal planning hassles and hello to delightful dining adventures.
@@ -14,7 +14,7 @@ Access SmartRecipe on your favorite devices, from smartphones to tablets. We mak
 
 ### How To Use:
 
-SmartRecipe is a website that uses \href{https://www.edamam.com/}{EDAMAM} to suggest personalized recipes based on the ingredients you have at home.
+SmartRecipe is a website that uses **EDAMAM API** to suggest personalized recipes based on the ingredients you have at home.
 Type in the ingredients you have at home, or any specific nutrient-rich diet you want to add to your menu, or simply browse through recipes of the world. Whatever you wish, we get you the dish. 🍽️🥗
 
 Happy Munching! 🌟✨
